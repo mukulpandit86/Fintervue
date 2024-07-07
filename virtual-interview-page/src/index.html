@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Expert Interview</title>
+    <link rel="stylesheet" href="virtual_interview.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Industry Expert Interview</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Mock Interviews</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="schedule">
+        <div class="container">
+            <h2>Schedule Your Interview</h2>
+            <form id="schedule-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="date">Choose Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Choose Time:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <button type="submit" class="btn">Schedule Interview</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="video-interview">
+        <div class="container">
+            <h2>Live Video Interview</h2>
+            <div id="video-container">
+                <div id="local-video"></div>
+                <div id="remote-video"></div>
+            </div>
+            <button id="end-call" class="btn">End Call</button>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <h2>Provide Feedback</h2>
+            <form id="feedback-form">
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="5" required></textarea>
+                <button type="submit" class="btn">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Made in India with love</p>
+        </div>
+    </footer>
+
+    <script src="virtual_interview.js"></script>
+</body>
+</html>

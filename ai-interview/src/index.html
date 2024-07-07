@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Interview</title>
+    <link rel="stylesheet" href="ai_interview.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI Video Interview</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Mock Interviews</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Roles</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="ai-interview">
+        <div class="container">
+            <h2>AI Interview Simulation</h2>
+            <div id="video-interview">
+                <video id="video" width="640" height="480" autoplay></video>
+                <div id="questions">
+                    <p id="question">Press Start to begin the AI Interview.</p>
+                    <button id="start-interview" class="btn">Start Interview</button>
+                    <button id="stop-interview" class="btn" style="display:none;">Stop Interview</button>
+                </div>
+            </div>
+            <div id="feedback" style="display:none;">
+                <h2>Feedback</h2>
+                <p id="feedback-message"></p>
+                <button id="proceed" class="btn" style="display:none;">Proceed to Industry Expert Interview</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Made in India with love</p>
+        </div>
+    </footer>
+
+    <script src="ai_interview.js"></script>
+</body>
+</html>
